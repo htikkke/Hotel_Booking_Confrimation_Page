@@ -39,19 +39,27 @@
                 1
               </div>
             </div>
-            <div class="flex gap-4 p-2 m-2 rounded-lg">
+            <div
+              class="flex gap-4 p-2 m-2 mr-4 rounded-lg cursor-pointer hover:bg-white transition-all"
+            >
               <img src="/src/images/icon-house.svg" />
               <p>The house</p>
             </div>
-            <div class="flex gap-4 p-2 m-2 rounded-lg">
+            <div
+              class="flex gap-4 p-2 m-2 mr-4 rounded-lg cursor-pointer hover:bg-white transition-all"
+            >
               <img src="/src/images/icon-pin.svg" />
               <p>Around Town</p>
             </div>
-            <div class="flex gap-4 p-2 m-2 rounded-lg">
+            <div
+              class="flex gap-4 p-2 m-2 mr-4 rounded-lg cursor-pointer hover:bg-white transition-all"
+            >
               <img src="/src/images/icon-breakfast-outline.svg" />
               <p>Breakfast</p>
             </div>
-            <div class="flex gap-4 p-2 m-2 rounded-lg">
+            <div
+              class="flex gap-4 p-2 m-2 mr-4 rounded-lg cursor-pointer hover:bg-white transition-all"
+            >
               <img src="/src/images/icon-mail.svg" />
               <p>Messages</p>
             </div>
@@ -106,22 +114,24 @@
           </div>
           <div class="flex gap-3">
             <button
-              class="flex items-center justify-center border border-gray-300 px-3 py-1 rounded-4xl font-bold text-sm font-dm-sans"
+              class="flex items-center justify-center border border-gray-300 px-3 py-1 rounded-4xl font-bold text-sm font-dm-sans cursor-pointer hover:bg-gray-300/40"
             >
               Print receipt
             </button>
             <button
-              class="flex items-center justify-center border border-gray-300 px-3 py-1 rounded-4xl font-bold text-sm font-dm-sans bg-black text-neutral-200"
+              class="flex items-center justify-center border border-gray-300 px-3 py-1 rounded-4xl font-bold text-sm font-dm-sans bg-black text-neutral-200 cursor-pointer"
             >
               Add to calendar
             </button>
           </div>
         </div>
         <!-- hero -->
-        <div class="row-span-5 flex items-center justify-center gap-5">
+        <div
+          class="row-span-5 flex items-center justify-center gap-5 group cursor-pointer transition-all"
+        >
           <!-- Receipt -->
           <div
-            class="-rotate-6 bg-neutral-50 shadow-2xl w-100 h-100 rounded-xl grid grid-rows-10 pr-3 pl-3 pb-3"
+            class="-rotate-6 bg-neutral-50 shadow-2xl w-100 h-100 rounded-xl grid grid-rows-10 pr-3 pl-3 pb-3 group-hover:rotate-6 transition-all"
           >
             <!-- Receipt-header -->
             <div
@@ -206,9 +216,13 @@
               </div>
             </div>
           </div>
+          <!-- hover-sun -->
+          <div class="hidden group-hover:block transition-all">
+            <img src="/src/images/illustration-sun.svg" />
+          </div>
           <!-- Welcome-card -->
           <div
-            class="rotate-6 relative bg-light-brown w-100 h-100 rounded-xl shadow-2xl grid grid-rows-10 p-3"
+            class="rotate-6 relative bg-light-brown w-100 h-100 rounded-xl shadow-2xl grid grid-rows-10 p-3 group-hover:-rotate-6 transition-all"
           >
             <div
               class="absolute -top-13 -right-10 w-50 h-50 bg-sun-200/20 rounded-full blur-2xl pointer-events-none"
@@ -337,7 +351,7 @@
                 <div class="flex gap-2 items-center">
                   <p class="text-sm font-medium text-black">soleil-2026</p>
                   <button
-                    class="uppercase font-mono-medium text-black/40 text-xs tracking-wide px-2 py-0.5 border border-gray-300 shadow-2xl rounded-2xl bg-white"
+                    class="uppercase font-mono-medium text-black/40 text-xs tracking-wide px-2 py-0.5 border border-gray-300 shadow-2xl rounded-2xl bg-white cursor-pointer"
                   >
                     copy
                   </button>
