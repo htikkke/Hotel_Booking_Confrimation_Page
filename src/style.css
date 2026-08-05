@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sun-50: hsl(41, 100%, 93%);
+  --color-neutral-0: hsl(0, 0%, 100%);
+  --color-neutral-100: hsl(35, 60%, 96%);
+  --color-neutral-dark: hsl(33, 15%, 15%);
+  --color-dark-brown: hsl(15, 69%, 37%);
+  --color-little-dark-brown: hsl(15, 74%, 41%);
+  --color-light-brown: hsl(18, 62%, 47%);
+  --color-sun-50: hsl(41, 100%, 93%);
+  --color-sun-200: hsl(45, 100%, 74%);
+  --color-blue-500: hsl(230, 49%, 56%);
+  --color-rose-300: hsl(340, 48%, 52%);
+  --color-thin-white: hsla(0, 0%, 100%, 0.29);
+
+  --font-mono-medium: "DMMono-Medium", sans-serif;
+  --font-mono-regular: "DMMono-Regular", sans-serif;
+  --font-dm-sans: "DM-Sans", sans-serif;
+  --font-fraunces-italics: "Fraunces-Italic", sans-serif;
+  --font-fraunces-variable: "Fraunces-variable", sans-serif;
+}
+
+@font-face {
+  font-family: "DMMono-Medium";
+  src: url("/src/fonts/dm-mono/DMMono-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMMono-Regular";
+  src: url("/src/fonts/dm-mono/DMMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM-Sans";
+  src: url("/src/fonts/dm-sans/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Fraunces-Italic";
+  src: url("/src/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Fraunces-variable";
+  src: url("/src/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+}
