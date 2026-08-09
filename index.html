@@ -14,7 +14,7 @@
     <!-- desktop-main-container -->
     <div
       id="desktop-main-container"
-      class="w-full h-auto bg-neutral-100 grid grid-cols-4"
+      class="w-full h-auto bg-neutral-100 grid grid-cols-4 max-[430px]:hidden"
     >
       <!-- side-bar -->
       <div
@@ -365,6 +365,298 @@
           </div>
           <div
             class="w-80 h-55 p-3 bg-white shadow-xl rounded-2xl border border-gray-300 grid grid-rows-10 max-[1025px]:w-70"
+          >
+            <div class="row-span-3 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img
+                  src="/src/images/icon-breakfast.svg"
+                  class="bg-rose-300 p-1 rounded-lg"
+                />
+                <p class="uppercase font-mono-medium text-sm text-rose-300">
+                  Breakfast
+                </p>
+              </div>
+              <p class="uppercase font-fraunces-variable text-lg text-rose-300">
+                03
+              </p>
+            </div>
+            <div class="mt-3">
+              <p class="font-fraunces-variable text-black text-xl">
+                Served 8 - 10:30
+              </p>
+              <p class="font-dm-sans text-black opacity-40 text-xs">
+                On the terrace
+              </p>
+              <p class="mt-3 font-dm-sans opacity-80 text-sm">
+                Fresh figs, Marseille honey, pain au levain, and espresso.
+                Gluten-free option? Leave a note the night before.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-main-container -->
+    <div
+      class="w-full h-auto bg-neutral-100 hidden max-[430px]:block overflow-hidden"
+    >
+      <!-- nav-bar -->
+      <div
+        class="flex items-center justify-between p-5 border-b-2 border-gray-300"
+      >
+        <img src="/src/images/logo.svg" />
+        <img
+          src="/src/images/icon-menu.svg"
+          class="p-2 rounded-lg border border-gray-300"
+        />
+      </div>
+      <!-- main-container -->
+      <div class="flex flex-col gap-10">
+        <!-- main-header -->
+        <div class="flex flex-col gap-5 p-5">
+          <p
+            class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+          >
+            Booking · Confirmed
+          </p>
+          <div class="flex">
+            <p class="font-fraunces-variable text-4xl">Bienvenue,</p>
+            <p class="font-fraunces-italics text-4xl text-light-brown">
+              Lucia.
+            </p>
+          </div>
+          <div class="flex items-center gap-5">
+            <button
+              class="flex items-center justify-center border border-gray-300 px-10 py-1 rounded-4xl font-bold text-sm font-dm-sans cursor-pointer hover:bg-gray-300/40 max-[390px]:text-xs max-[390px]:px-8"
+            >
+              Print receipt
+            </button>
+            <button
+              class="flex items-center justify-center border border-gray-300 px-8 py-1 rounded-4xl font-bold text-sm font-dm-sans bg-black text-neutral-200 cursor-pointer max-[390px]:text-xs max-[390px]:px-8"
+            >
+              Add to calendar
+            </button>
+          </div>
+        </div>
+        <!-- main-body -->
+        <!-- welcome-card -->
+        <div
+          class="rotate-2 bg-light-brown w-90 h-100 rounded-xl shadow-2xl grid grid-rows-10 p-3 ml-5 max-[390px]:ml-2"
+        >
+          <div
+            class="absolute -top-13 -right-10 w-50 h-50 bg-sun-200/20 rounded-full blur-2xl pointer-events-none"
+          ></div>
+          <!-- welcome-header -->
+          <div
+            class="row-span-2 flex justify-between items-start pt-3 border-t-2 border-dashed border-sun-50/30"
+          >
+            <p
+              class="text-sun-50/75 uppercase font-mono-medium text-sm tracking-widest"
+            >
+              Welcome Card
+            </p>
+            <img src="/src/images/icon-sun.svg" />
+          </div>
+          <!-- welcome-body -->
+          <div class="row-span-6 pt-3 flex flex-col gap-2">
+            <p class="font-fraunces-italics text-xl text-sun-200">
+              A note from your host,
+            </p>
+            <p class="font-fraunces-italics text-4xl text-sun-50">Margaux.</p>
+            <p class="font-dm-sans text-sm mt-2 text-sun-50">
+              We're so glad you're coming. The shutters will be open, the
+              lemonade cold, and the cat - Poivre - pretending not to notice
+              you.
+            </p>
+          </div>
+          <!-- welcome-footer -->
+          <div class="row-span-2">
+            <p
+              class="text-sun-50/75 uppercase font-mono-medium text-sm tracking-widest"
+            >
+              Room
+            </p>
+            <p class="font-fraunces-variable text-2xl text-sun-50">
+              La Garrigue
+            </p>
+          </div>
+        </div>
+        <!-- Recepit-card -->
+        <div
+          class="-rotate-3 bg-neutral-50 shadow-2xl w-90 h-100 rounded-xl grid grid-rows-10 pr-3 pl-3 pb-3 ml-5 max-[390px]:ml-2"
+        >
+          <!-- Receipt-header -->
+          <div
+            class="row-span-2 flex items-center justify-between border-b border-dashed border-gray-300"
+          >
+            <div>
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                Receipt
+              </p>
+              <p class="font-fraunces-variable text-xl">Your stay</p>
+            </div>
+            <div class="flex flex-col items-end">
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                № MS-2026
+              </p>
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                0421-AH
+              </p>
+            </div>
+          </div>
+          <!-- Receipt-body -->
+          <div
+            class="row-span-3 flex items-center justify-evenly border-b border-dashed border-gray-300 pt-3 pb-3"
+          >
+            <div class="flex flex-col items-center">
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                Check in
+              </p>
+              <p class="font-fraunces-variable text-3xl mt-2">25 Apr</p>
+              <p class="font-dm-sans opacity-70 text-sm">Saturday · 15:00</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                Check out
+              </p>
+              <p class="font-fraunces-variable text-3xl mt-2">29 Apr</p>
+              <p class="font-dm-sans opacity-70 text-sm">Wednesday · 11:00</p>
+            </div>
+          </div>
+          <!-- Receipt-body -->
+          <div
+            class="row-span-3 flex justify-between pt-4 pb-0 border-b-2 border-black"
+          >
+            <div>
+              <p class="font-dm-sans">Room · La Garrigue · 4 nights</p>
+              <p class="font-dm-sans">Breakfast · 2 guests</p>
+              <p class="font-dm-sans">Tourist tax</p>
+            </div>
+            <div class="flex flex-col items-end">
+              <p class="font-dm-sans">€ 620.00</p>
+              <p class="font-dm-sans">€ 96.00</p>
+              <p class="font-dm-sans">€ 14.40</p>
+            </div>
+          </div>
+          <!-- Receipt-footer -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                Total paid
+              </p>
+              <p class="font-fraunces-variable text-xl mt-2">€ 730.40</p>
+            </div>
+            <div class="flex items-center justify-between">
+              <p
+                class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+              >
+                Paid · Wise · GBP
+              </p>
+              <img src="/src/images/icon-barcode.svg" />
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="row-span-3 flex flex-col items-center p-5 gap-5">
+          <div
+            class="w-80 h-55 p-3 bg-white shadow-xl rounded-2xl border border-gray-300 grid grid-rows-10"
+          >
+            <div class="row-span-3 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img
+                  src="/src/images/icon-key.svg"
+                  class="bg-light-brown p-1 rounded-lg"
+                />
+                <p class="uppercase font-mono-medium text-sm text-light-brown">
+                  Arrival
+                </p>
+              </div>
+              <p
+                class="uppercase font-fraunces-variable text-lg text-light-brown"
+              >
+                01
+              </p>
+            </div>
+            <div class="mt-3">
+              <p class="font-fraunces-variable text-black text-xl">
+                Check-in from 15:00
+              </p>
+              <p class="font-dm-sans text-black opacity-40 text-xs">
+                Sat, 25 April
+              </p>
+              <p class="mt-3 font-dm-sans opacity-80 text-sm">
+                Ring the brass bell by the blue door. If we're at the market,
+                the key is in the terracotta pot by the olive tree.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-80 h-55 p-3 bg-neutral-0 shadow-xl rounded-2xl border border-gray-300 grid grid-rows-10"
+          >
+            <div class="row-span-3 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img
+                  src="/src/images/icon-wifi.svg"
+                  class="bg-blue-500 p-1 rounded-lg"
+                />
+                <p class="uppercase font-mono-medium text-sm text-blue-500">
+                  Wifi
+                </p>
+              </div>
+              <p class="uppercase font-fraunces-variable text-lg text-blue-500">
+                02
+              </p>
+            </div>
+            <div class="mt-3 row-span-7">
+              <p class="font-fraunces-variable text-black text-xl">
+                Le Soleil · Guest
+              </p>
+              <p class="font-dm-sans text-black opacity-40 text-xs">
+                Password below
+              </p>
+              <div
+                class="flex items-center justify-between bg-black/10 backdrop-blur-md px-3 py-0.5 rounded-xl border border-white/10 mt-3"
+              >
+                <p
+                  class="uppercase font-mono-medium text-black/40 text-xs tracking-widest"
+                >
+                  Network
+                </p>
+                <p class="text-sm font-medium text-black">Le Soleil · Guest</p>
+              </div>
+              <div
+                class="flex items-center justify-between bg-black/10 backdrop-blur-md px-3 py-0.5 rounded-xl border border-white/10 mt-1"
+              >
+                <p
+                  class="uppercase font-mono-medium text-black opacity-40 text-xs tracking-widest"
+                >
+                  Password
+                </p>
+                <div class="flex gap-2 items-center">
+                  <p class="text-sm font-medium text-black">soleil-2026</p>
+                  <button
+                    class="uppercase font-mono-medium text-black/40 text-xs tracking-wide px-2 py-0.5 border border-gray-300 shadow-2xl rounded-2xl bg-white cursor-pointer"
+                  >
+                    copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-80 h-55 p-3 bg-white shadow-xl rounded-2xl border border-gray-300 grid grid-rows-10"
           >
             <div class="row-span-3 flex items-center justify-between">
               <div class="flex items-center gap-2">
