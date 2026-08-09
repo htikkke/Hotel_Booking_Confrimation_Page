@@ -16,4 +16,5 @@ closeIcon.addEventListener("click", () => {
   closeIcon.classList.add("hidden");
   menuIcon.classList.remove("hidden");
   mainContainer.classList.remove("hidden");
+  menuContainer.classList.add("hidden");
 });
